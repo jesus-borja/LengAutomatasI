@@ -19,11 +19,11 @@ $ python bot.py
 
 ## Inicio
 
-![Inicio del chat](./img/1%20Inicio.jpg)
+<img src="./img/1 Inicio.jpg" alt="Inicio del chat" width="300px"></img>
 
 ## Saludos en español
 
-![Saludos en español](./img/2%20Saludos.jpg)
+<img src="./img/2 Saludos.jpg" alt="Saludos en español" width="300px"></img>
 
 Para esta respuesta se usó la siguiente expresión regular que detecta las palabras "Hola", "Hey", "Hello", "Hi". Se usa la bandera `IGNORECASE` para detectar letras mayúsculas y minúsculas.
 
@@ -35,7 +35,7 @@ re.compile(r"hello|hi|hey|hola", re.IGNORECASE)
 
 ### Bom dia
 
-![Bom dia](./img/4%20Bom%20dia.jpg)
+<img src="./img/4 Bom dia.jpg" alt="Bom dia" width="300px"></img>
 
 Para esta respuesta se usó la siguiente expresión regular que detecta las frases "Bom dia" y "Boa noite", con la bandera `IGNORECASE` para que detecta tanto letras mayúsculas como minúsculas.
 
@@ -45,7 +45,7 @@ re.compile(r"(bom dia)|(boa noite)", re.IGNORECASE)
 
 ### Boa noite
 
-![Bom noite](./img/3%20Boa%20noite.jpg)
+<img src="./img/3 Boa noite.jpg" alt="Bom noite" width="300px"></img>
 
 Para esta respuesta se usó la misma expresión regular que en el ejemplo anterior.
 
@@ -57,7 +57,7 @@ re.compile(r"(bom dia)|(boa noite)", re.IGNORECASE)
 
 ### Quiero volar de ... a ... el ...
 
-![Vuelos con fecha](./img/5%20Vuelos%20con%20fecha.jpg)
+<img src="./img/5 Vuelos con fecha.jpg" alt="Vuelos con fecha" width="300px"></img>
 
 Para generar esta respuesta se usó la siguiente expresión regular que detecta las frases similares a "Volar de Cualquier país/lugar a Cualquier otro país/lugar".
 
@@ -67,9 +67,7 @@ re.compile(r"volar de (.*) a (.*) el (\d{1,2} de .*)", re.IGNORECASE)
 
 ### ¿Cuánto cuesta un vuelo de ... a ...?
 
-### ¿Cuánto cuesta un vuelo de ... a ...?
-
-![Precio de un vuelo](./img/6%20Precio%20de%20un%20vuelo.jpg)
+<img src="./img/6 Precio de un vuelo.jpg" alt="Precio de un vuelo" width="300px"></img>
 
 Para esta respuesta se usó la siguiente expresión regular que detecta las oraciones parecidas a "¿Cuánto cuesta un vuelo de Cualquier país/lugar a Cualquier otro país/lugar".
 
@@ -79,7 +77,7 @@ re.compile(r"cu[a|á]nto cuesta un vuelo de (.*) a (.*)", re.IGNORECASE)
 
 ### Me gustaria un vuelo de ida y vuelta de ... a ...?
 
-![Vuelos de ida y vuelta](./img/7%20Vuelos%20de%20ida%20y%20vuelta.jpg)
+<img src="./img/7 Vuelos de ida y vuelta.jpg" alt="Vuelos de ida y vuelta" width="300px"></img>
 
 Para esta respuesta se usó la siguiente expresión regular que detecta las frases parecidas a "Un vuelo de ida y vuelta de Cualquier lugar/país a Cualquier otro lugar/país".
 
@@ -91,7 +89,7 @@ re.compile(r"un vuelo de ida y vuelta de (.*) a (.*)", re.IGNORECASE)
 
 ### ¿Qué es un número de la suerte?
 
-![Definicion número de la suerte](./img/8%20Definición%20número%20de%20la%20suerte.jpg)
+<img src="./img/8 Definición número de la suerte.jpg" alt="Definición de un número de la suerte" width="300px"></img>
 
 Para esta respuesta se usó la siguiente expresión regular que detecta las frases parecidas a "¿Qué son los números de la suerte?" o "¿Qué es un número de la suerte?".
 
@@ -101,7 +99,7 @@ re.compile(r"qu[e|é] (.*) n[u|ú]meros? (.*) suerte", re.IGNORECASE)
 
 ### ¿Es ... un número de la suerte?
 
-![Número de la suerte](./img/9%20Número%20de%20la%20suerte.jpg)
+<img src="./img/9 Número de la suerte.jpg" alt="Número de la suerte" width="300px"></img>
 
 Para esta respuesta se usó la siguiente expresión regular que detecta frases como "¿Es # un número de la suerte?" donde # puede ser un número con al menos un dígito
 
