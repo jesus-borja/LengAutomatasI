@@ -120,7 +120,6 @@ def esNumeroDeLaSuerte(string: str) -> bool:
 
 ## Otras cadenas
 
-![Otros mensajes](./img/10%20Otros%20mensajes.jpg)
 <img src="./img/10 Otros mensajes.jpg" alt="Otros mensajes" width="300px"></img>
 
 Para las cadenas que no cumplen ninguna de las expresiones regulares se envia un mensaje indicando que no se reconoció el mensaje anterior.
