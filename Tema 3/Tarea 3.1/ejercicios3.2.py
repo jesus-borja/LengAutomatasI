@@ -36,3 +36,20 @@ if __name__ == "__main__":
     }
     afd = AFD.AFD(Q, sigma, delta, q0, F)
     AFD.write_dot_diagram_from_DFA(afd, filename="B", create_image=True)
+
+    # C) El lenguaje donde toda cadena contiene el sufijo aba
+    Q = {'q0', 'q1', 'q2', 'q3',}
+    q0 = 'q0'
+    F = {'q3'}
+    delta = {
+        ('q0', 'a'): 'q1',
+        ('q0', 'b'): 'q0',
+        ('q1', 'a'): 'q1',
+        ('q1', 'b'): 'q2',
+        ('q2', 'a'): 'q3',
+        ('q2', 'b'): 'q0',
+        ('q3', 'a'): 'q1',
+        ('q3', 'b'): 'q2',
+    }
+    afd = AFD.AFD(Q, sigma, delta, q0, F)
+    AFD.write_dot_diagram_from_DFA(afd, filename="C", create_image=True)
