@@ -114,3 +114,20 @@ if __name__ == "__main__":
     }
     afd = AFD.AFD(Q, sigma, delta, q0, F)
     AFD.write_dot_diagram_from_DFA(afd, filename="F", create_image=True)
+
+    # G) El lenguaje donde toda cadena contiene la subcadena baba
+    Q = {'q0', 'q1', 'q2', 'q3',}
+    q0 = 'q0'
+    F = {'q2',}
+    delta = {
+        ('q0', 'a'): 'q1',
+        ('q0', 'b'): 'q2',
+        ('q1', 'a'): 'q0',
+        ('q1', 'b'): 'q3',
+        ('q2', 'a'): 'q3',
+        ('q2', 'b'): 'q0',
+        ('q3', 'a'): 'q2',
+        ('q3', 'b'): 'q1',
+    }
+    afd = AFD.AFD(Q, sigma, delta, q0, F)
+    AFD.write_dot_diagram_from_DFA(afd, filename="G", create_image=True)
