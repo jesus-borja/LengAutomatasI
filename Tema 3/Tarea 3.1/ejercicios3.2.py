@@ -53,3 +53,20 @@ if __name__ == "__main__":
     }
     afd = AFD.AFD(Q, sigma, delta, q0, F)
     AFD.write_dot_diagram_from_DFA(afd, filename="C", create_image=True)
+
+    # D) El lenguaje donde ninguna cadena contiene las subcadenas aa ni bb
+    Q = {'q0', 'q1', 'q2', 'q3',}
+    q0 = 'q0'
+    F = {'q0', 'q1', 'q2',}
+    delta = {
+        ('q0', 'a'): 'q1',
+        ('q0', 'b'): 'q2',
+        ('q1', 'a'): 'q3',
+        ('q1', 'b'): 'q2',
+        ('q2', 'a'): 'q1',
+        ('q2', 'b'): 'q3',
+        ('q3', 'a'): 'q3',
+        ('q3', 'b'): 'q3',
+    }
+    afd = AFD.AFD(Q, sigma, delta, q0, F)
+    AFD.write_dot_diagram_from_DFA(afd, filename="D", create_image=True)
