@@ -1,3 +1,5 @@
+import subprocess
+
 class AFD:
     def __init__(self, Q: set, sigma: set, delta: dict, q0: str, F: set):
         self.Q = Q         # estados
@@ -14,8 +16,8 @@ class AFD:
         print(f"{cadena}: {estado_actual in self.F}")
         return estado_actual in self.F
 
-def write_dot_diagram_from_DFA(afd: AFD, filename="AFD.dot") -> None:
-    with open(filename, "w") as f:
+def write_dot_diagram_from_DFA(afd: AFD, filename="AFD", create_image=False) -> None:
+    with open(f"{filename}.dot", "w") as f:
         print("/* transition diagram for DFA */", file=f)
         print("/* created by github.com/jesus-borja */", file=f)
         print("", file=f)
@@ -39,6 +41,20 @@ def write_dot_diagram_from_DFA(afd: AFD, filename="AFD.dot") -> None:
         
         print("  overlapse=false", file=f)
         print("}", file=f)
+
+    if create_image: 
+        create_png_diagram(filename, filename)
+        
+def create_png_diagram(dot_file: str, output_name: str):
+    cmd = f"dot {dot_file}.dot -Tpng -o {output_name}.png"
+    print(f"Creando imagen {output_name}.png con el archivo {dot_file}.dot")
+    print(f"$ {cmd}")
+
+    return_code = subprocess.run(cmd)
+    if return_code.returncode == 0:
+        print(f"Imagen \"{output_name}.png\" creada correctamente")
+    else:
+        print(f"No se pudo crear la imagen {output_name}.png")
         
 if __name__ == "__main__":
 
@@ -55,5 +71,5 @@ if __name__ == "__main__":
     F = {'q0'}
     
     afd = AFD(Q, sigma, delta,q0, F)
-    write_dot_diagram_from_DFA(afd)
+    write_dot_diagram_from_DFA(afd, filename="ejemplo", create_image=True)
     
