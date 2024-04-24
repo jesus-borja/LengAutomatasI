@@ -44,7 +44,7 @@ def write_dot_diagram_from_DFA(afd: AFD, filename="AFD", create_image=False) -> 
 
     if create_image: 
         create_png_diagram(filename, filename)
-        
+
 def create_png_diagram(dot_file: str, output_name: str):
     cmd = f"dot {dot_file}.dot -Tpng -o {output_name}.png"
     print(f"Creando imagen {output_name}.png con el archivo {dot_file}.dot")
@@ -55,7 +55,7 @@ def create_png_diagram(dot_file: str, output_name: str):
         print(f"Imagen \"{output_name}.png\" creada correctamente")
     else:
         print(f"No se pudo crear la imagen {output_name}.png")
-        
+
 if __name__ == "__main__":
 
     # ejemplo
