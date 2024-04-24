@@ -89,3 +89,28 @@ if __name__ == "__main__":
     }
     afd = AFD.AFD(Q, sigma, delta, q0, F)
     AFD.write_dot_diagram_from_DFA(afd, filename="E", create_image=True)
+
+    # F) El lenguaje donde toda cadena contiene por separado a las cadenas ab y ba
+    Q = {'q0', 'q1', 'q2', 'q3', 'q4', 'q5', 'q6', 'q7',}
+    q0 = 'q0'
+    F = {'q7',}
+    delta = {
+        ('q0', 'a'): 'q1',
+        ('q0', 'b'): 'q2',
+        ('q1', 'a'): 'q1',
+        ('q1', 'b'): 'q3',
+        ('q2', 'a'): 'q4',
+        ('q2', 'b'): 'q2',
+        ('q3', 'a'): 'q1',
+        ('q3', 'b'): 'q5',
+        ('q4', 'a'): 'q6',
+        ('q4', 'b'): 'q2',
+        ('q5', 'a'): 'q7',
+        ('q5', 'b'): 'q5',
+        ('q6', 'a'): 'q6',
+        ('q6', 'b'): 'q7',
+        ('q7', 'a'): 'q7',
+        ('q7', 'b'): 'q7',
+    }
+    afd = AFD.AFD(Q, sigma, delta, q0, F)
+    AFD.write_dot_diagram_from_DFA(afd, filename="F", create_image=True)
