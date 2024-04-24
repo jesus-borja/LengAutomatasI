@@ -35,7 +35,7 @@ def write_dot_diagram_from_DFA(afd: AFD, filename="AFD", create_image=False) -> 
                 print(f"  \"{q}\" [shape=circle]", file=f)
 
         # escribe todas las aristas
-        print(f"  \"Start\" -> \"{q0}\"", file=f)
+        print(f"  \"Start\" -> \"{afd.q0}\"", file=f)
         for key, value in afd.delta.items():
             print(f"  \"{key[0]}\" -> \"{value}\" [label = \"{key[1]}\"]", file=f)
         
