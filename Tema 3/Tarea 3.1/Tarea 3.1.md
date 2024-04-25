@@ -19,7 +19,7 @@ $q_0 = q_0$
 
 $F = \{q_0\}$
 
-$$
+```math
 \begin{align}
 \delta = \{&(q_0, 0) = q_2, \\
 &(q_0, 1) =  q_1, \\
@@ -31,7 +31,7 @@ $$
 &(q_3, 1) =  q_1 \\
 \}
 \end{align}
-$$
+```
 
 ![ejercicio3.1](img/ejercicio3.1.png)
 
@@ -55,7 +55,7 @@ $\delta  = \{(q_0, b) = q_1, (q_1, b) = q_2\}$
 
 Agregando los estados faltantes de *a*s:
 
-$$
+```math
 \begin{align}
 \delta  = &\{    \\
 &(q_0, a) = q_0, \\
@@ -68,7 +68,7 @@ $$
 &(q_3, b) = q_3  \\
 \}
 \end{align}
-$$
+```
 
 También agregamos un cuarto estado:
 
@@ -84,7 +84,7 @@ $q_0 = q_0$
 
 $F = q_2$
 
-$$
+```math
 \begin{align}
 \delta  = &\{    \\
 &(q_0, a) = q_0, \\
@@ -97,7 +97,7 @@ $$
 &(q_3, b) = q_3  \\
 \}
 \end{align}
-$$
+```
 
 ### b) El lenguaje de las cadenas no vacías, donde toda _a_ está entre dos *b*s
 
@@ -111,14 +111,14 @@ $q_0 = q_0$
 
 $F = q_1$
 
-$$
+```math
 \begin{align}
 \delta  = &\{(q_0, b) = q_1, \\
 &(q_1, a) = q_0, \\
 &(q_1, b) = q_1 \\
 \}
 \end{align}
-$$
+```
 
 ![ejercicio3.2b1](img/ejercicio3.2b1.png)
 
@@ -132,7 +132,7 @@ $F = q_1$
 
 $Q = \{q_0, q_1, q_2\}$
 
-$$
+```math
 \begin{align}
 \delta  = &\{(q_0, a) = q_2 \\
 &(q_0, b) = q_1, \\
@@ -142,7 +142,7 @@ $$
 &(q_2, b) = q_2 \\
 \}
 \end{align}
-$$
+```
 
 ![ejercicio3.2bFinal](img/ejercicio3.2bFinal.png)
 
@@ -158,20 +158,20 @@ $q_0 = q_0$
 
 $F = q_2$
 
-$$
+```math
 \begin{align}
 \delta  = &\{(q_0, a) = q_1, \\
 &(q_1, b) = q_2, \\
 &(q_2, a) = q_3, \\
 \}
 \end{align}
-$$
+```
 
 ![ejercicio3.2c1](img/ejercicio3.2c1.png)
 
 Agregando los estados faltantes además de otro estado:
 
-$$
+```math
 \begin{align}
 \delta  = &\{(q_0, a) = q_1, \\
 &(q_0, b) = q_0, \\
@@ -183,7 +183,7 @@ $$
 &(q_3, b) = q_2 \\
 \}
 \end{align}
-$$
+```
 
 ![ejercicio3.2cFinal](img/ejercicio3.2cFinal.png)
 
@@ -197,7 +197,7 @@ $q_0 = q_0$
 
 $F = q_3$
 
-$$
+```math
 \begin{align}
 \delta  = &\{(q_0, a) = q_1, \\
 &(q_0, b) = q_0, \\
@@ -209,7 +209,7 @@ $$
 &(q_3, b) = q_2 \\
 \}
 \end{align}
-$$
+```
 
 ### d) El lenguaje donde ninguna cadena contiene las subcadenas _aa_ ni _bb_.
 
@@ -223,7 +223,7 @@ $q_0 = q_0$
 
 $F = \{q_0, q_1\}$
 
-$$
+```math
 \begin{align}
 \delta  = &\{(q_0, a) = q_1, \\
 &(q_0, b) = q_1, \\
@@ -233,7 +233,7 @@ $$
 &(q_2, b) = q_2, \\
 \}
 \end{align}
-$$
+```
 
 ![ejercicio3.2d1](img/ejercicio3.2d1.png)
 
@@ -243,7 +243,7 @@ $Q = \{q_0, q_1, q_2, q_3\}$
 
 $F = \{q_0, q_1, q_2\}$
 
-$$
+```math
 \begin{align}
 \delta  = &\{(q_0, a) = q_1, \\
 &(q_0, b) = q_2, \\
@@ -253,13 +253,13 @@ $$
 &(q_3, b) = q_3 \\
 \}
 \end{align}
-$$
+```
 
 ![ejercicio3.2d2](img/ejercicio3.2d2.png)
 
 Ahora podemos agregar las transiciones faltantes:
 
-$$
+```math
 \begin{align}
 \delta  = &\{(q_0, a) = q_1, \\
 &(q_0, b) = q_2, \\
@@ -271,7 +271,7 @@ $$
 &(q_3, b) = q_3 \\
 \}
 \end{align}
-$$
+```
 
 ![ejercicio3.2dFinal](img/ejercicio3.2dFinal.png)
 
@@ -285,7 +285,7 @@ $Q = \{q_0, q_1, q_2, q_3\}$
 
 $F = \{q_0, q_1, q_2\}$
 
-$$
+```math
 \begin{align}
 \delta  = &\{(q_0, a) = q_1, \\
 &(q_0, b) = q_2, \\
@@ -297,7 +297,7 @@ $$
 &(q_3, b) = q_3 \\
 \}
 \end{align}
-$$
+```
 
 ### e) El lenguaje donde toda cadena contiene la subcadena _baba_
 
@@ -311,7 +311,7 @@ $Q = \{q_0, q_1, q_2, q_3, q_4\}$
 
 $F = \{q_4\}$
 
-$$
+```math
 \begin{align}
 \delta  = &\{(q_0, b) = q_1, \\
 &(q_1, a) = q_2, \\
@@ -321,13 +321,13 @@ $$
 &(q_4, b) = q_4  \\
 \}
 \end{align}
-$$
+```
 
 ![ejercicio3.2e1](img/ejercicio3.2e1.png)
 
 Agregando las transiciones faltantes:
 
-$$
+```math
 \begin{align}
 \delta  = &\{(q_0, a) = q_0, \\
 &(q_0, b) = q_1, \\
@@ -341,7 +341,7 @@ $$
 &(q_4, b) = q_4  \\
 \}
 \end{align}
-$$
+```
 
 ![ejercicio3.2eFinal](img/ejercicio3.2eFinal.png)
 
@@ -355,7 +355,7 @@ $Q = \{q_0, q_1, q_2, q_3, q_4\}$
 
 $F = \{q_4\}$
 
-$$
+```math
 \begin{align}
 \delta  = &\{(q_0, a) = q_0, \\
 &(q_0, b) = q_1, \\
@@ -369,7 +369,7 @@ $$
 &(q_4, b) = q_4  \\
 \}
 \end{align}
-$$
+```
 
 ### f) El lenguaje donde toda cadena contiene por separado a las cadenas _ab_ y _ba_
 
@@ -381,7 +381,7 @@ $Q = \{q_0, q_1, q_2, q_3, q_4, q_5, q_6, q_7\}$
 
 $F = \{q_7\}$
 
-$$
+```math
 \begin{align}
 \delta  = &\{(q_0, a) = q_1, \\
 &(q_0, b) = q_2, \\
@@ -395,14 +395,14 @@ $$
 &(q_7, b) = q_7  \\
 \}
 \end{align}
-$$
+```
 
 Primera iteración:
 ![ejericio3.2f1](img/ejericio3.2f1.png)
 
 Agregamos las transiciones que faltan para cada estado:
 
-$$
+```math
 \begin{align}
 \delta  = &\{(q_0, a) = q_1, \\
 &(q_0, b) = q_2, \\
@@ -422,7 +422,7 @@ $$
 &(q_7, b) = q_7  \\
 \}
 \end{align}
-$$
+```
 
 ![ejericio3.2fFinal](img/ejericio3.2fFinal.png)
 
@@ -436,7 +436,7 @@ $Q = \{q_0, q_1, q_2, q_3, q_4, q_5, q_6, q_7\}$
 
 $F = \{q_7\}$
 
-$$
+```math
 \begin{align}
 \delta  = &\{(q_0, a) = q_1, \\
 &(q_0, b) = q_2, \\
@@ -456,7 +456,7 @@ $$
 &(q_7, b) = q_7  \\
 \}
 \end{align}
-$$
+```
 
 ### g) Toda cadena es de longitud impar y contiene una cantidad par de *a*s
 
@@ -468,7 +468,7 @@ $Q = \{q_0, q_1, q_2, q_3\}$
 
 $F = \{q_2\}$
 
-$$
+```math
 \begin{align}
 \delta  = &\{ (q_0, a) = q_1, \\
 &(q_0, b) = q_2, \\
@@ -480,6 +480,6 @@ $$
 &(q_3, b) = q_1  \\
 \}
 \end{align}
-$$
+```
 
 ![ejercicio3.2gFinal](img/ejercicio3.2gFinal.png)
