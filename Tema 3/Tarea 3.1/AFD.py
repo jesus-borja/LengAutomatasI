@@ -42,7 +42,6 @@ def write_dot_diagram_from_DFA(afd: AFD, filename="AFD", create_image=False) -> 
         for key, value in afd.delta.items():
             print(f"  \"{key[0]}\" -> \"{value}\" [label = \"{key[1]}\"]", file=f)
         
-        print("  overlapse=false", file=f)
         print("}", file=f)
 
     if create_image: 
