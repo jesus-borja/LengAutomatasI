@@ -18,7 +18,7 @@ $Q = \{0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10\}$
 
 Las transiciones se dan por cada moneda que podemos introducir al sistema para llegar a la suma de 10:
 
-$$
+```math
 \begin{align}
 \delta &= \{ \\
 &(0, 1) = 1, \\
@@ -49,7 +49,7 @@ $$
 &(0, 10) = 10 \\
 &\}
 \end{align}
-$$
+```
 
 Por último, el estado inicial es siempre empezar en 0, y el estado final es cuando se llega a la suma de 10:
 
